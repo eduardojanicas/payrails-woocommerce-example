@@ -1,0 +1,85 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"atelier-product","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group atelier-product" style="margin-top:0;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70)">
+	<!-- wp:woocommerce/breadcrumbs {"align":"wide","fontSize":"x-small","textColor":"accent-4"} /-->
+
+	<!-- wp:woocommerce/store-notices {"align":"wide"} /-->
+
+	<!-- wp:columns {"align":"wide","className":"atelier-product__columns","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|70"},"margin":{"top":"var:preset|spacing|40"}}}} -->
+	<div class="wp-block-columns alignwide atelier-product__columns" style="margin-top:var(--wp--preset--spacing--40)">
+		<!-- wp:column {"width":"55%","className":"atelier-product__media"} -->
+		<div class="wp-block-column atelier-product__media" style="flex-basis:55%">
+			<!-- wp:woocommerce/product-image-gallery /-->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"width":"45%","className":"atelier-product__summary","style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
+		<div class="wp-block-column atelier-product__summary" style="flex-basis:45%">
+			<!-- wp:post-terms {"term":"product_cat","className":"atelier-eyebrow","fontSize":"x-small"} /-->
+
+			<!-- wp:post-title {"level":1,"style":{"typography":{"fontWeight":"300"}},"fontSize":"xx-large","__woocommerceNamespace":"woocommerce/product-query/product-title"} /-->
+
+			<!-- wp:woocommerce/product-price {"isDescendentOfSingleProductTemplate":true,"fontSize":"large"} /-->
+
+			<!-- wp:post-excerpt {"textColor":"accent-4","style":{"typography":{"fontWeight":"300","lineHeight":"1.625"}},"__woocommerceNamespace":"woocommerce/product-query/product-summary"} /-->
+
+			<!-- wp:separator {"className":"is-style-wide"} -->
+			<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+			<!-- /wp:separator -->
+
+			<!-- wp:woocommerce/add-to-cart-form {"className":"atelier-add-to-cart"} /-->
+
+			<!-- wp:group {"className":"atelier-product__assurances","style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+			<div class="wp-block-group atelier-product__assurances" style="margin-top:var(--wp--preset--spacing--30)">
+				<!-- wp:paragraph {"textColor":"accent-4","fontSize":"x-small"} -->
+				<p class="has-accent-4-color has-text-color has-x-small-font-size">Secure card payment, including 3D Secure, powered by Payrails.</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+
+			<!-- wp:woocommerce/product-meta -->
+			<div class="wp-block-woocommerce-product-meta">
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+				<div class="wp-block-group">
+					<!-- wp:woocommerce/product-sku {"fontSize":"x-small","textColor":"accent-4"} /-->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:woocommerce/product-meta -->
+		</div>
+		<!-- /wp:column -->
+	</div>
+	<!-- /wp:columns -->
+
+	<!-- wp:woocommerce/product-details {"align":"wide","className":"is-style-minimal atelier-product__details","style":{"spacing":{"margin":{"top":"var:preset|spacing|70"}}}} /-->
+
+	<!-- wp:heading {"align":"wide","style":{"typography":{"fontWeight":"300"},"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|40"}}}} -->
+	<h2 class="wp-block-heading alignwide" style="margin-top:var(--wp--preset--spacing--70);margin-bottom:var(--wp--preset--spacing--40);font-weight:300">You may also like</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:woocommerce/product-collection {"queryId":3,"query":{"perPage":3,"pages":1,"offset":0,"postType":"product","order":"asc","orderBy":"menu_order","search":"","exclude":[],"inherit":false,"taxQuery":{},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":3,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"collection":"woocommerce/product-collection/related","hideControls":["inherit"],"queryContextIncludes":["collection"],"align":"wide","className":"atelier-grid atelier-grid--related"} -->
+	<div class="wp-block-woocommerce-product-collection alignwide atelier-grid atelier-grid--related">
+		<!-- wp:woocommerce/product-template {"className":"atelier-grid__list"} -->
+			<!-- wp:woocommerce/product-image {"showSaleBadge":false,"isDescendentOfQueryLoop":true,"aspectRatio":"4/5","scale":"cover","className":"atelier-card__media"} /-->
+
+			<!-- wp:group {"className":"atelier-card__meta","style":{"spacing":{"blockGap":"var:preset|spacing|30","margin":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
+			<div class="wp-block-group atelier-card__meta" style="margin-top:var(--wp--preset--spacing--30)">
+				<!-- wp:group {"className":"atelier-card__text","style":{"spacing":{"blockGap":"0.125rem"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+				<div class="wp-block-group atelier-card__text">
+					<!-- wp:post-title {"level":3,"isLink":true,"className":"atelier-card__title","fontSize":"medium","__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
+
+					<!-- wp:post-terms {"term":"product_cat","className":"atelier-card__category","fontSize":"small"} /-->
+				</div>
+				<!-- /wp:group -->
+
+				<!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true,"className":"atelier-card__price","fontSize":"medium"} /-->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:woocommerce/product-template -->
+	</div>
+	<!-- /wp:woocommerce/product-collection -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

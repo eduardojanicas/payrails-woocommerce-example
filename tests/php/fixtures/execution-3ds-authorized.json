@@ -1,0 +1,13 @@
+{
+  "_source": "Shape observed on Payrails staging for a completed 3DS challenge. All ids, references and links replaced with placeholders.",
+  "id": "00000000-0000-4000-8000-000000000021",
+  "status": [
+    { "code": "created", "time": "2026-09-23T22:30:10.100000000Z" },
+    { "code": "authorizeRequested", "time": "2026-09-23T22:30:10.500000000Z" },
+    { "code": "authorizePending", "time": "2026-09-23T22:30:13.000000000Z" },
+    { "code": "authorizeSuccessful", "time": "2026-09-23T22:30:21.000000000Z" }
+  ],
+  "merchantReference": "30",
+  "amount": { "value": "45.00", "currency": "USD" },
+  "links": { "self": "https://api.example.payrails.io/x", "3ds": "https://api-pub.example.payrails.io/public/redirect/merchant/payment-acceptance/x/y" }
+}

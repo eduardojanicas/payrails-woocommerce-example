@@ -1,0 +1,68 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"atelier-home","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group atelier-home" style="margin-top:0;padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
+
+	<!-- wp:group {"className":"atelier-hero","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained","contentSize":"42rem"}} -->
+	<div class="wp-block-group atelier-hero" style="margin-bottom:var(--wp--preset--spacing--70)">
+		<!-- wp:heading {"textAlign":"center","level":1,"className":"atelier-hero__title","style":{"typography":{"fontWeight":"300","lineHeight":"1.15"}}} -->
+		<h1 class="wp-block-heading has-text-align-center atelier-hero__title" style="font-weight:300;line-height:1.15">Essential<br><em>Minimalism</em></h1>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph {"align":"center","className":"atelier-hero__lede","textColor":"accent-4","fontSize":"large","style":{"typography":{"fontWeight":"300","lineHeight":"1.625"}}} -->
+		<p class="has-text-align-center atelier-hero__lede has-accent-4-color has-text-color has-large-font-size" style="font-weight:300;line-height:1.625">Timeless pieces crafted from the finest materials. Clean lines, perfect fits, enduring quality.</p>
+		<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:woocommerce/product-collection {"queryId":1,"query":{"perPage":6,"pages":1,"offset":0,"postType":"product","order":"asc","orderBy":"menu_order","search":"","exclude":[],"inherit":false,"taxQuery":{},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[]},"tagName":"div","displayLayout":{"type":"flex","columns":3,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"collection":"woocommerce/product-collection/product-catalog","hideControls":["inherit"],"queryContextIncludes":["collection"],"align":"wide","className":"atelier-grid"} -->
+	<div class="wp-block-woocommerce-product-collection alignwide atelier-grid">
+		<!-- wp:woocommerce/product-template {"className":"atelier-grid__list"} -->
+			<!-- wp:woocommerce/product-image {"showSaleBadge":false,"isDescendentOfQueryLoop":true,"aspectRatio":"4/5","scale":"cover","className":"atelier-card__media"} /-->
+
+			<!-- wp:group {"className":"atelier-card__meta","style":{"spacing":{"blockGap":"var:preset|spacing|30","margin":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
+			<div class="wp-block-group atelier-card__meta" style="margin-top:var(--wp--preset--spacing--30)">
+				<!-- wp:group {"className":"atelier-card__text","style":{"spacing":{"blockGap":"0.125rem"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+				<div class="wp-block-group atelier-card__text">
+					<!-- wp:post-title {"level":2,"isLink":true,"className":"atelier-card__title","fontSize":"medium","__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
+
+					<!-- wp:post-terms {"term":"product_cat","className":"atelier-card__category","fontSize":"small"} /-->
+				</div>
+				<!-- /wp:group -->
+
+				<!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true,"className":"atelier-card__price","fontSize":"medium"} /-->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:woocommerce/product-template -->
+
+		<!-- wp:woocommerce/product-collection-no-results -->
+			<!-- wp:paragraph {"align":"center","textColor":"accent-4"} -->
+			<p class="has-text-align-center has-accent-4-color has-text-color">The collection is being restocked. Please check back soon.</p>
+			<!-- /wp:paragraph -->
+		<!-- /wp:woocommerce/product-collection-no-results -->
+	</div>
+	<!-- /wp:woocommerce/product-collection -->
+
+	<!-- wp:group {"align":"wide","className":"atelier-panel atelier-cta","style":{"border":{"width":"1px","color":"var:preset|color|accent-6","radius":"4px"},"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|30"}},"backgroundColor":"accent-1","layout":{"type":"constrained","contentSize":"42rem"}} -->
+	<div class="wp-block-group alignwide atelier-panel atelier-cta has-border-color has-accent-1-background-color has-background" style="border-color:var(--wp--preset--color--accent-6);border-width:1px;border-radius:4px;margin-top:var(--wp--preset--spacing--70);padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50)">
+		<!-- wp:heading {"textAlign":"center","style":{"typography":{"fontWeight":"300"}}} -->
+		<h2 class="wp-block-heading has-text-align-center" style="font-weight:300">Experience Our Checkout</h2>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph {"align":"center","textColor":"accent-4","fontSize":"small","style":{"typography":{"fontWeight":"300","lineHeight":"1.625"}}} -->
+		<p class="has-text-align-center has-accent-4-color has-text-color has-small-font-size" style="font-weight:300;line-height:1.625">Add a piece to your bag and check out. Payment runs on the Payrails Drop-in, embedded natively in WooCommerce, with card payments and 3D Secure.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
+		<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--40)">
+			<!-- wp:button {"className":"atelier-button-arrow"} -->
+			<div class="wp-block-button atelier-button-arrow"><a class="wp-block-button__link wp-element-button" href="/shop/">Shop the Collection</a></div>
+			<!-- /wp:button -->
+		</div>
+		<!-- /wp:buttons -->
+	</div>
+	<!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

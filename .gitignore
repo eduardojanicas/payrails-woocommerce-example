@@ -1,0 +1,21 @@
+.secrets/
+wordpress/
+node_modules/
+test-results/
+playwright-report/
+*.log
+.run/
+tests/php/tools/
+.phpunit.cache/
+tests/e2e/artifacts/
+# Defensive catch-alls: secrets must never be committable,
+# wherever a copy ends up.
+.env
+.env*
+*.env
+*.pem
+*.key
+*.crt
+*.p12
+*.sqlite*
+.ht.sqlite*

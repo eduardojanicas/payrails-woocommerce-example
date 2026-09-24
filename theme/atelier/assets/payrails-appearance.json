@@ -1,0 +1,105 @@
+{
+  "rules": {
+    ".payrails-container": {
+      "fontFamily": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "color": "#1F1F1F"
+    },
+    ".payrails-accordion-item": {
+      "backgroundColor": "#FFFFFF",
+      "border": "1px solid #E6E6E6",
+      "borderRadius": "6px"
+    },
+    ".payrails-accordion-item--expanded": {
+      "borderColor": "#1F1F1F"
+    },
+    ".payrails-accordion-header": {
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "#1F1F1F"
+    },
+    ".payrails-input": {
+      "border": "1px solid #949494",
+      "borderRadius": "6px",
+      "padding": "12px 14px",
+      "minHeight": "44px",
+      "boxSizing": "border-box",
+      "color": "#1F1F1F",
+      "backgroundColor": "#FFFFFF",
+      "fontSize": "15px",
+      "fontFamily": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "letterSpacing": "0.01em",
+      "transition": "border-color 200ms cubic-bezier(0.2, 0, 0, 1)"
+    },
+    ".payrails-input::placeholder": {
+      "color": "#737373"
+    },
+    ".payrails-input:focus": {
+      "borderColor": "#1F1F1F",
+      "outline": "2px solid #1F1F1F",
+      "outlineOffset": "2px"
+    },
+    ".payrails-input--invalid": {
+      "borderColor": "#C52020",
+      "backgroundColor": "#FDF1F1"
+    },
+    ".payrails-label": {
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "letterSpacing": "0.025em",
+      "color": "#666666"
+    },
+    ".payrails-error": {
+      "color": "#C52020",
+      "fontSize": "12px"
+    },
+    "@media (prefers-reduced-motion: reduce)": {
+      ".payrails-input": { "transition": "none" }
+    }
+  },
+  "cardForm": {
+    "rules": {
+      ".payrails-container": { "gap": "16px" }
+    }
+  },
+  "cardPaymentButton": {
+    "rules": {
+      ".payrails-button": {
+        "backgroundColor": "#1F1F1F",
+        "color": "#FAFAFA",
+        "border": "0",
+        "borderRadius": "6px",
+        "minHeight": "48px",
+        "padding": "14px 24px",
+        "width": "100%",
+        "fontFamily": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "letterSpacing": "0.025em",
+        "textTransform": "uppercase",
+        "transition": "background-color 200ms cubic-bezier(0.2, 0, 0, 1)"
+      },
+      ".payrails-button:hover": { "backgroundColor": "#141414" },
+      ".payrails-button:focus-visible": { "outline": "2px solid #1F1F1F", "outlineOffset": "2px" },
+      ".payrails-button--disabled": { "backgroundColor": "#F0F0F0", "color": "#666666", "opacity": "1" },
+      ".payrails-button--loading": { "opacity": "0.7" },
+      "@media (prefers-reduced-motion: reduce)": {
+        ".payrails-button": { "transition": "none" }
+      }
+    }
+  },
+  "loadingScreen": {
+    "rules": {
+      ".payrails-container": { "color": "#666666" }
+    }
+  },
+  "authFailed": {
+    "rules": {
+      ".payrails-label": { "color": "#C52020", "fontSize": "14px" }
+    }
+  },
+  "authSuccess": {
+    "rules": {
+      ".payrails-label": { "color": "#1E7A34", "fontSize": "14px" }
+    }
+  }
+}

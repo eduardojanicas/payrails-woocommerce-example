@@ -1,0 +1,183 @@
+{
+    "_about": "Shape of a POST /merchant/client/init response, observed on Payrails staging for a card-acceptance workflow. Values are placeholders; lists are cut to one element. The API returns {version, data} where data is base64-encoded JSON; data_decoded shows it decoded. The execution id is data.execution.id.",
+    "version": "<sdk-version>",
+    "data": "<base64 of data_decoded>",
+    "data_decoded": {
+        "token": "<token>",
+        "holderReference": "<holderReference>",
+        "dataEncryptionId": "<dataEncryptionId>",
+        "vaultConfiguration": {
+            "vaultId": "<vaultId>",
+            "vaultUrl": "<vaultUrl>",
+            "token": "<token>",
+            "status": "enabled",
+            "vaultType": "Payrails",
+            "providerId": "<providerId>",
+            "providerConfigId": "<providerConfigId>",
+            "links": {
+                "saveInstrument": {
+                    "method": "POST",
+                    "href": "https://<href>"
+                }
+            },
+            "encryptionPublicKey": "<encryptionPublicKey>",
+            "encryptionPublicKeyExpiresIn": 3300
+        },
+        "amount": {
+            "value": "45.00",
+            "currency": "USD"
+        },
+        "execution": {
+            "id": "<id>",
+            "status": [
+                {
+                    "code": "created",
+                    "time": "2026-01-01T00:00:00.000000000Z"
+                }
+            ],
+            "createdAt": "2026-01-01T00:00:00.000000000Z",
+            "merchantReference": "<merchantReference>",
+            "holderId": "<holderId>",
+            "workspaceId": "<workspaceId>",
+            "holderReference": "<holderReference>",
+            "amount": {
+                "value": "45.00",
+                "currency": "USD"
+            },
+            "workflow": {
+                "code": "payment-acceptance",
+                "version": 56
+            },
+            "meta": {
+                "CIT": true,
+                "clientContext": {
+                    "ipAddress": "<ipAddress>",
+                    "origin": "https://<origin>",
+                    "osType": "web",
+                    "returnUrl": "https://<returnUrl>",
+                    "userAgent": "<userAgent>"
+                },
+                "customer": {
+                    "country": {
+                        "code": "US"
+                    },
+                    "email": "<email>",
+                    "name": "<name>",
+                    "reference": "<reference>"
+                },
+                "order": {
+                    "description": "<description>",
+                    "lines": [
+                        {
+                            "id": "<id>",
+                            "name": "<name>",
+                            "quantity": 1,
+                            "unitPrice": {
+                                "currency": "USD",
+                                "value": "45.00"
+                            }
+                        }
+                    ],
+                    "reference": "<reference>"
+                },
+                "workflowConfigVersion": 56
+            },
+            "links": {
+                "self": "https://<self>",
+                "authorize": {
+                    "method": "POST",
+                    "href": "https://<href>"
+                },
+                "startPaymentSession": {
+                    "method": "POST",
+                    "href": "https://<href>"
+                }
+            },
+            "initialResults": [
+                {
+                    "httpCode": 200,
+                    "body": {
+                        "name": "<name>",
+                        "actionId": "<actionId>",
+                        "workspaceId": "<workspaceId>",
+                        "executedAt": "2026-01-01T00:00:00.000000000Z",
+                        "data": {
+                            "paymentCompositionOptions": [
+                                {
+                                    "integrationType": "api",
+                                    "paymentMethodCode": "applePay",
+                                    "description": "<description>",
+                                    "config": {
+                                        "parameters": {
+                                            "countryCode": "<countryCode>",
+                                            "merchantCapabilities": [
+                                                "<merchantCapabilities>"
+                                            ],
+                                            "merchantIdentifier": "<merchantIdentifier>",
+                                            "supportedNetworks": [
+                                                "<supportedNetworks>"
+                                            ]
+                                        },
+                                        "type": "CARD"
+                                    },
+                                    "clientConfig": {
+                                        "displayName": "ApplePay",
+                                        "flow": "direct",
+                                        "supportsSaveInstrument": true,
+                                        "additionalConfig": {
+                                            "parameters": {
+                                                "countryCode": "<countryCode>",
+                                                "merchantCapabilities": [
+                                                    "<merchantCapabilities>"
+                                                ],
+                                                "merchantIdentifier": "<merchantIdentifier>",
+                                                "supportedNetworks": [
+                                                    "<supportedNetworks>"
+                                                ]
+                                            },
+                                            "type": "CARD"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "links": {
+                            "execution": "https://<execution>",
+                            "authorize": {
+                                "method": "POST",
+                                "href": "https://<href>"
+                            },
+                            "startPaymentSession": {
+                                "method": "POST",
+                                "href": "https://<href>"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "links": {
+            "binLookup": [],
+            "instrumentDelete": {
+                "method": "DELETE",
+                "href": "https://<href>"
+            },
+            "instrumentUpdate": {
+                "method": "PATCH",
+                "href": "https://<href>"
+            },
+            "clientUpdate": {
+                "method": "POST",
+                "href": "https://<href>"
+            }
+        },
+        "type": "dropIn",
+        "featureConfig": {
+            "gpayIframeRollout": 0,
+            "secureFieldsRollout": 0,
+            "coBrandedCardsRollout": 0,
+            "sdkVersion": "<sdkVersion>",
+            "schemaVersion": 1
+        }
+    }
+}

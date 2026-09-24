@@ -1,0 +1,16 @@
+{
+  "name": "payrails-woocommerce-example",
+  "private": true,
+  "description": "Example integration of Payrails card payments (Web SDK v6 Drop-in, 3D Secure) into a WooCommerce store. Node is only used for the browser tests.",
+  "license": "GPL-2.0-or-later",
+  "type": "module",
+  "scripts": {
+    "test:e2e": "playwright test --project=staging && playwright test --project=authfail",
+    "test:e2e:staging": "playwright test --project=staging",
+    "test:e2e:authfail": "playwright test --project=authfail"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "1.63.0"
+  }
+}

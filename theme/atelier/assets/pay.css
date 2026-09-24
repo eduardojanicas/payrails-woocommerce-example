@@ -1,0 +1,53 @@
+/*
+ * Atelier brand for the payrails-woo pay panel. The layout and states come from the
+ * plugin's baseline stylesheet (plugin/payrails-woo/assets/css/payrails-woo.css);
+ * this file only sets tokens. Enqueued by the theme on is_wc_endpoint_url('order-pay').
+ */
+.woo-payrails-pay {
+	/* Panel tokens (see the plugin stylesheet for the list). */
+	--woo-payrails-ink: var(--atelier-ink);
+	--woo-payrails-muted: var(--atelier-muted);
+	--woo-payrails-surface: var(--atelier-surface);
+	--woo-payrails-subtle: var(--atelier-subtle);
+	--woo-payrails-soft: var(--atelier-soft);
+	--woo-payrails-hairline: var(--atelier-hairline);
+	--woo-payrails-warm: var(--atelier-warm);
+	--woo-payrails-warm-ink: var(--atelier-warm-ink);
+	--woo-payrails-success: var(--atelier-success);
+	--woo-payrails-error: var(--atelier-error);
+	--woo-payrails-error-tint: var(--atelier-error-tint);
+	--woo-payrails-serif: var(--atelier-serif);
+	--woo-payrails-sans: var(--atelier-sans);
+	--woo-payrails-radius-sm: var(--atelier-radius-sm);
+	--woo-payrails-radius-md: var(--atelier-radius-md);
+
+	/* Drop-in light-DOM tokens. The SDK writes its defaults inline on <html>, so they
+	   are overridden on this descendant. Iframe fields use payrails-appearance.json. */
+	--payrails-color-primary: #1F1F1F;
+	--payrails-color-background: #FFFFFF;
+	--payrails-color-text: #1F1F1F;
+	--payrails-color-placeholder: #737373;
+	--payrails-color-border-default: #949494;
+	--payrails-color-border-subtle: #E6E6E6;
+	--payrails-color-border-focus: #1F1F1F;
+	--payrails-color-surface-hover: #FAFAFA;
+	--payrails-color-success: #1E7A34;
+	--payrails-color-error-text: #C52020;
+	--payrails-color-error-border: #C52020;
+	--payrails-color-error-background: #FDF1F1;
+	--payrails-font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+	--payrails-font-size-base: 14px;
+	--payrails-font-size-control: 15px;
+	--payrails-font-size-sm: 12px;
+	--payrails-font-weight-regular: 400;
+	--payrails-font-weight-medium: 500;
+	--payrails-font-letter-spacing-control: 0.01em;
+	--payrails-border-width: 1px;
+	--payrails-radius-6: 6px;
+	--payrails-radius-8: 6px;
+	--payrails-size-control-height: 48px;
+	--payrails-size-input-height: 44px;
+	--payrails-motion-duration-fast: 200ms;
+	--payrails-motion-duration-faster: 120ms;
+	--payrails-motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+}

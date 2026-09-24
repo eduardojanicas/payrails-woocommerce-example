@@ -1,0 +1,13 @@
+{
+  "_source": "Shape observed on Payrails staging for a declined card, 2026-09-23. Ids replaced. status[] kept in API order. Note the authorizePending written AFTER authorizeFailed.",
+  "id": "00000000-0000-4000-8000-000000000011",
+  "status": [
+    { "code": "authorizePending", "time": "2026-09-23T22:33:57.004978732Z" },
+    { "code": "authorizeFailed", "time": "2026-09-23T22:33:55.541660595Z", "errors": [ { "id": "00000000-0000-4000-8000-000000000012", "code": "workflow.action.failed", "detail": "The execution of the requested workflow action failed", "reason": { "category": "Operation", "result": "GenericRejection" } } ] },
+    { "code": "created", "time": "2026-09-23T22:33:52.456832414Z" },
+    { "code": "authorizeRequested", "time": "2026-09-23T22:33:52.859552663Z" }
+  ],
+  "merchantReference": "33",
+  "amount": { "value": "45.00", "currency": "USD" },
+  "links": { "self": "https://api.example.payrails.io/x", "3ds": "https://api-pub.example.payrails.io/public/redirect/merchant/payment-acceptance/x/y" }
+}

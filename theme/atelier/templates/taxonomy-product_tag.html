@@ -1,0 +1,61 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"atelier-archive","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|70"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group atelier-archive" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70)">
+	<!-- wp:woocommerce/breadcrumbs {"align":"wide","fontSize":"x-small","textColor":"accent-4"} /-->
+
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|50"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+	<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--50)">
+		<!-- wp:query-title {"type":"archive","showPrefix":false,"style":{"typography":{"fontWeight":"300"}},"fontSize":"xx-large"} /-->
+
+		<!-- wp:term-description {"textColor":"accent-4","fontSize":"small"} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:woocommerce/store-notices {"align":"wide"} /-->
+
+	<!-- wp:group {"align":"wide","className":"atelier-archive__toolbar","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+	<div class="wp-block-group alignwide atelier-archive__toolbar" style="margin-bottom:var(--wp--preset--spacing--50)">
+		<!-- wp:woocommerce/product-results-count {"fontSize":"small"} /-->
+
+		<!-- wp:woocommerce/catalog-sorting {"fontSize":"small"} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:woocommerce/product-collection {"queryId":5,"query":{"perPage":12,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"menu_order","search":"","exclude":[],"inherit":true,"taxQuery":{},"isProductCollectionBlock":true,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[]},"tagName":"div","displayLayout":{"type":"flex","columns":3,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"align":"wide","className":"atelier-grid"} -->
+	<div class="wp-block-woocommerce-product-collection alignwide atelier-grid">
+		<!-- wp:woocommerce/product-template {"className":"atelier-grid__list"} -->
+			<!-- wp:woocommerce/product-image {"showSaleBadge":false,"isDescendentOfQueryLoop":true,"aspectRatio":"4/5","scale":"cover","className":"atelier-card__media"} /-->
+
+			<!-- wp:group {"className":"atelier-card__meta","style":{"spacing":{"blockGap":"var:preset|spacing|30","margin":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
+			<div class="wp-block-group atelier-card__meta" style="margin-top:var(--wp--preset--spacing--30)">
+				<!-- wp:group {"className":"atelier-card__text","style":{"spacing":{"blockGap":"0.125rem"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+				<div class="wp-block-group atelier-card__text">
+					<!-- wp:post-title {"level":2,"isLink":true,"className":"atelier-card__title","fontSize":"medium","__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
+
+					<!-- wp:post-terms {"term":"product_cat","className":"atelier-card__category","fontSize":"small"} /-->
+				</div>
+				<!-- /wp:group -->
+
+				<!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true,"className":"atelier-card__price","fontSize":"medium"} /-->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:woocommerce/product-template -->
+
+		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}}} -->
+			<!-- wp:query-pagination-previous /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:woocommerce/product-collection-no-results -->
+			<!-- wp:paragraph {"align":"center","textColor":"accent-4"} -->
+			<p class="has-text-align-center has-accent-4-color has-text-color">Nothing here yet. <a href="/shop/">View the full collection</a>.</p>
+			<!-- /wp:paragraph -->
+		<!-- /wp:woocommerce/product-collection-no-results -->
+	</div>
+	<!-- /wp:woocommerce/product-collection -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
